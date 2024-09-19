@@ -2,6 +2,10 @@
 
 This repository contains a personal portfolio project of Juho Kim, developed as part of Practical 1 of the University of Toronto ECE444 course. A base version of this repository was sourced from [varadbhogayata's personal portfolio repository](https://github.com/varadbhogayata/varadbhogayata.github.io), as required by the assignment.
 
+## Activity 1
+
+![Screenshot taken after the completion of Activity 1](activities/screenshot-1.png)
+
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
 > https://AussieSeaweed.github.io
