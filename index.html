@@ -529,7 +529,7 @@
 
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
+      <h3 id="projects-heading" class="page-title white-text teal">Recent Project</h3>
       <div class="container">
         <div class="row">
 
@@ -571,7 +571,7 @@
           </div>
 
           <!-- Cardroom -->
-          <div class="col s12 m6 l4">
+          <div class="hidden-project col s12 m6 l4" hidden>
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Poker playing robot" src="/assets/img/poker-robot-1.webp" style="height: 100%; width: 100%" class="activator" />
@@ -636,7 +636,7 @@
 	  </div> -->
 
           <!-- Revolution -->
-          <div class="col s12 m6 l4">
+          <div class="hidden-project col s12 m6 l4" hidden>
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="A fancy solar car" src="/assets/img/revolution.webp"
@@ -671,7 +671,7 @@
           </div>
 
           <!-- PHH -->
-          <div class="col s12 m6 l4">
+          <div class="hidden-project col s12 m6 l4" hidden>
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Poker Playing Robot" src="/assets/img/poker-robot-2.webp" style="height: 100%; width: 100%" class="activator" />
@@ -713,7 +713,7 @@
           </div>
 
           <!-- PHH Dataset -->
-          <div class="col s12 m6 l4">
+          <div class="hidden-project col s12 m6 l4" hidden>
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Poker Playing Robot" src="/assets/img/poker-robot-3.webp" style="height: 100%; width: 100%" class="activator" />
@@ -750,7 +750,7 @@
           </div>
 
           <!-- PHS Dataset -->
-          <div class="col s12 m6 l4">
+          <div class="hidden-project col s12 m6 l4" hidden>
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Poker Playing Robot" src="/assets/img/poker-robot-4.webp" style="height: 100%; width: 100%" class="activator" />
@@ -787,6 +787,7 @@
 
           <!-- ************* -->
         </div>
+        <button id="load-more-btn" class="mx-auto" onclick="loadMore()">Load More</button>
       </div>
     </section>
 
@@ -1037,6 +1038,18 @@
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
+    function loadMore() {
+      let hiddenProjects = document.getElementsByClassName('hidden-project');
+      let loadMoreButton = document.getElementById('load-more-btn');
+      let projectsHeading = document.getElementById('projects-heading');
+
+      for (let hiddenProject of hiddenProjects)
+        hiddenProject.hidden = false;
+
+      loadMoreButton.hidden = true;
+      projectsHeading.innerHTML = 'Projects';
+    }
+
     // Materialize - Initializers
     $(document).ready(function () {
       $(".scrollspy").scrollSpy()
