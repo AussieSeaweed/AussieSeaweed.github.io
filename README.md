@@ -11,6 +11,11 @@ This repository contains a personal portfolio project of Juho Kim, developed as 
 ![Screenshot 0 taken after the completion of Activity 2](activities/screenshot-2-0.png)
 ![Screenshot 1 taken after the completion of Activity 2](activities/screenshot-2-1.png)
 
+## Activity 3
+
+![Screenshot 0 taken after the completion of Activity 3](activities/screenshot-3-0.png)
+![Screenshot 1 taken after the completion of Activity 3](activities/screenshot-3-1.png)
+
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
 > https://AussieSeaweed.github.io
